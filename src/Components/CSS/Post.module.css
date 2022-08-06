@@ -1,0 +1,46 @@
+.comments {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+    color: #000000;
+}
+
+.input {
+    /* sacar los bordes que quede transparente */
+    background-color: #F1F1F1;
+    width: 477px;
+height: 55px;
+left: 482px;
+top: 803px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+    color: #000000;
+    
+}
+
+.post {
+    width: 39px;
+    height: 15px;
+    left: 905px;
+    top: 823px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+    
+    text-align: right;
+    
+    color: #3D8AFF;
+    
+    
+}
