@@ -7,9 +7,6 @@ function App() {
     <div className="App">
       <header className="App-header">
         <LandingPage/>
-        <p>
-          Empezando el CLON
-        </p>
       </header>
     </div>
   );

@@ -1,9 +1,19 @@
-.carousel {
-    width: 110px;
-    height: 110px;
+.carousel > div {
+  height: 40%;
+}
+
+.container_img {
+  height: 325px;
+  width: 100%;
 }
 
 .img {
-    width: 150px;
-    height: 150px;
+  object-fit: scale-down;
+}
+
+.swiper {
+  width: 526px;
+  height: 325px;
+  left: 458px;
+  top: 218px;
 }

@@ -5,10 +5,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // import required modules
 import { Navigation, Pagination } from "swiper";
 import s from "./CSS/Carousel.module.css";
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import { useSwiper } from 'swiper/react';
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import { useSwiper } from "swiper/react";
 
 export default function Carousel() {
   const [pictures, setPictures] = useState([]);
@@ -24,35 +24,29 @@ export default function Carousel() {
     setPictures(photos);
   };
 
-
-
-
   return (
-    <div>
-        <Swiper
-      // install Swiper modules
-      modules={[Navigation, Pagination]}
-      spaceBetween={50}
-      slidesPerView={1}
-      navigation
-      pagination={{ clickable: true }}
-      scrollbar={{ draggable: true }}
-      onSwiper={(swiper) => console.log(swiper)}
-      /* onSlideChange={() => console.log()} */
-    >
-      {pictures.map((p, index) => {
-            return (
-              <SwiperSlide key={index}>
-                {" "}
+    <div className={s.carousel}>
+      <Swiper
+        modules={[Navigation, Pagination]}
+        spaceBetween={50}
+        slidesPerView={1}
+        navigation
+        pagination={{ clickable: true }}
+      >
+        {pictures.map((p, index) => {
+          return (
+            <SwiperSlide key={index}>
+              <div className={s.container_img}>
                 <img
                   className={s.img}
                   src={p.download_url}
                   alt="image not found"
-                />{" "}
-              </SwiperSlide>
-            );
-          })}
-    </Swiper>
+                />
+              </div>
+            </SwiperSlide>
+          );
+        })}
+      </Swiper>
     </div>
   );
-};
+}
