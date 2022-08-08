@@ -4,7 +4,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
 .header {
@@ -13,15 +12,13 @@
   padding: 5px 0px 5px 20px;
   align-items: center;
   gap: 25px;
-  
 }
 
-.name_city{
+.name_city {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 9px;
-  
 }
 
 .container {
@@ -42,13 +39,12 @@
 }
 
 .name {
-margin: 0%;
+  margin: 0%;
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
-  font-weight: bold;
   color: #000000;
 }
 
@@ -70,6 +66,10 @@ margin: 0%;
   align-items: center;
 }
 
+.heart {
+  cursor: pointer;
+}
+
 .description_parent {
   height: 50%;
 }
@@ -79,13 +79,17 @@ margin: 0%;
   text-align: left;
   font-family: "Inter";
   font-style: normal;
+  font-weight: 400;
   font-size: 12px;
   line-height: 15px;
   color: #000000;
 }
 
 .description > span {
-  font-weight: bold;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: #000000;
 }
-
-

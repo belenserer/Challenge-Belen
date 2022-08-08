@@ -18,7 +18,7 @@ export default function Carousel() {
   }, []);
 
   const obtenerFotos = async () => {
-    const data = await fetch("https://picsum.photos/v2/list?page=2&limit=4");
+    const data = await fetch("https://picsum.photos/v2/list?page=6&limit=4");
     const photos = await data.json();
     /* console.log(pictures) */
     setPictures(photos);

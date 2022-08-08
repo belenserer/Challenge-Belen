@@ -32,9 +32,17 @@ export default function LandingPage() {
         <div className={s.description_parent}>
           <div className={s.icons}>
             {like ? (
-              <img onClick={(e) => handleChange(e)} src={likeHeart} />
+              <img
+                className={s.heart}
+                onClick={(e) => handleChange(e)}
+                src={likeHeart}
+              />
             ) : (
-              <img onClick={(e) => handleChange(e)} src={emptyHeart} />
+              <img
+                className={s.heart}
+                onClick={(e) => handleChange(e)}
+                src={emptyHeart}
+              />
             )}
             <img src={comment} />
             <img src={send} />
